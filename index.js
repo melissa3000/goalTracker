@@ -15,7 +15,7 @@ app.post('/createUser', (req, res) => {
 		.then(() => res.sendStatus(200))
 })
 
-app.listen(7555, () => {
+app.listen(5000, () => {
 	console.log('Server running on http://localhost:5000')
 })
 
