@@ -1,14 +1,14 @@
-// hide my dbpassword
 // protect from SQL injections
 // hash user passwords for security
 
+require('dotenv').config();
 let mysql = require('mysql');
 
 // Connect to the db
 let con = mysql.createConnection({
 	host: "localhost",
-	user: "root",
-	password: "dummypassword",
+	user: process.env.DATABASE_USER,
+	password: process.env.DATABASE_PASSWORD,
 	database: "goalTracker"
 });
 
