@@ -28,5 +28,16 @@ module.exports = {
 				if (err) throw err;
 				console.log('new user added successfully');
 		})
-	}
+	},
+	// still working on this part
+	
+	// authenticate ({ username, password }) {
+	// 	console.log(`Authenticating ${username}`)
+	// 	let valid_user = con.query(`SELECT password FROM users WHERE username=${username} AND password=${password}`, (err, res) => {
+
+	// 	})
+
+	// }
 }
+
+
